@@ -9,9 +9,7 @@
 /* font-family: 'Press Start 2P', cursive; */
 /* #FFC107 */
 
-body{
-	/* padding-bottom: 1000px; */
-}
+
 .image{
 	background-image: url("../img/background.jpg");
 	min-height: 1000px; 
