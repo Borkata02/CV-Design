@@ -176,7 +176,6 @@ body{
 	50% { border-color: #FFC107; }
 }
 .profile{
-	
 	position: relative;
 	top: 100px;
 	
@@ -392,17 +391,17 @@ body{
 	font-size: 24px;
 }
 .skills{
-	top: 100px;
+	top: 50px;
 	position: relative;
 	text-align: center;
-	padding: 180px;
+	padding: 250px;
 	color: #fff;
 	font-family: 'Agdasima', sans-serif;
 	text-transform: uppercase;
 	
 }
 .skills .container i.fa-solid.fa-laptop-code{
-	font-size: 45px;
+	font-size: 60px;
 }
 .skills h1.header{
 	position: relative;
@@ -411,76 +410,391 @@ body{
 	content: '';
 	position: absolute;
 	bottom: -3px;
-	left: 46%;
+	left: 47%;
 	width: 100px;
 	height: 5px;
 	background-color: #fff;
 	border-radius: 5px;;
 }
+#chart {
+	height: 400px;
+	max-width: 1400px;
+	margin: 0 auto;
+	background-color:rgb(99, 99, 99);
+	font-size: 24px;
+	color: #fff;
+	padding: 20px;
+	position: relative;
+	top: 100px;
+	border-radius: 10px;
+}
 #chart{
-	height: 250px;
-	max-width: 600px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-	position: relative;
-	top: 100px;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 28px;
+	--data-axes-color: rgb(0, 0, 0, 0.7);
+	--data-axes-style: solid;
+	--data-axes-width: 2px;
+	--secondary-axes-color: rgba(0, 0, 0, 0.7)
 }
-#chart caption{
+.charts-css.column:not(.reverse) tbody tr th {
 	color: #fff;
+}
+#chart td {
+	background-image: linear-gradient(
+	45deg,
+	#956fd3,
+	#e76ec2,
+	#ff7fa2,
+	#ffa782,
+	#ffd86f,
+	#faf982
+	);
+	background-size: 600%;
+	animation: gradient-animation 3s linear infinite alternate;
+}
+@keyframes gradient-animation {
+	0%   { background-position:   0%; }
+	100% { background-position: 100%; }
+}
+/* #axes-example-9 tbody td {
+	transform-origin: bottom;
+	animation: revealing-bars 8s linear infinite;
+}
+@keyframes revealing-bars {
+	0%  { transform: scaleY( 0 ); }
+	10% { transform: scaleY( 1 ); }
+	
+} */
+#footer{
+	background-color:rgb(99, 99, 99);
 	position: relative;
-	top: -50px;
-}
-
-.charts-css.bar:not(.reverse) tbody tr th {
-	font-size: 21px;
-}
-.charts-css.bar.reverse tbody tr th{
-	font-size: 21px;
-}
-#chart2 caption{
+	top: 300px;
+	padding: 30px;
+	text-transform: uppercase;
+	font-family: 'Agdasima', sans-serif;
 	color: #fff;
-	text-align: right;
-	position: relative;
-	top: -50px;
+	
 }
-#chart2{
-	height: 250px;
-	max-width: 600px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: right;
-	align-items: right;
-	margin: 0;
+#footer p{
+	font-size: 25px;
+	vertical-align: middle;
 	position: relative;
-	top: 100px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: right;
-	font-size: 30px;
+	
 }
-
-  
-
-
-
-
+#footer span,
+#footer i.fa.fa-heart{
+	color: #FFC107;
+}
+/* Responsive */
 
 @media only screen and (max-width: 1399px){
 	.myself .container{
 		font-size: 40px;
 	}
-	
+	.internships p{
+		font-size: 22px;
+	}
 	.myself .col-md-6 span.first,
 	.myself .col-md-6 span.second{
 		font-size: 45px;
-		
-		
+	}
+	
+	.myself .col-md-6 span.first:before{
+		content: '';
+		position: absolute;
+		left: -8px;
+		bottom: 9px;
+		width: 190px;
+		height: 6px;
+		background-color: #00FFFF;
+	}
+	.myself .col-md-6 span.second:before{
+		content: '';
+		position: absolute;
+		left: 20px;
+		bottom: 8px;
+		width: 345px;
+		height: 6px;
+		background-color: #00FFFF;
+	}
+	.myself .code{
+		font-family: 'VT323', monospace;
+		font-size: 35px;
+	}
+	.profile h1.header:before{
+		width: 115px;
+	} 
+	.education h1.header:before{
+		left: 43%;
+		width: 154px;
+	}
+	.internships h1.header:before{
+		left: 43%;
+	}
+	.skills h1.header:before{
+		left: 44%;
+	}
+	.skills .container i.fa-solid.fa-laptop-code{
+		font-size: 55px;
 	}
 }
+@media only screen and (max-width: 1250px){
+	.internships p{
+		font-size: 21px;
+	}
+	.internships h1.header:before{
+		left: 42%;
+	}
+	.skills h1.header:before{
+		left: 43%;
+	}
+}
+@media only screen and (max-width: 1236px){
+	#chart {
+		font-size: 22px;
+	}
+}
+@media only screen and (max-width: 1200px){
+	#chart {
+		font-size: 22px;
+	}
+	.myself .container{
+		font-size: 38px;
+	}
+	.myself .col-md-6 span.first,
+	.myself .col-md-6 span.second{
+		font-size: 42px;
+	}
+	.myself .code{
+		font-family: 'VT323', monospace;
+		font-size: 30px;
+	}
+	.myself .col-md-6 span.first:before{
+		left: -8px;
+		bottom: 4px;
+		width: 190px;
+		height: 6px;
+	}
+	.myself .col-md-6 span.second:before{
+		left: 20px;
+		bottom: 4px;
+		width: 325px;
+		height: 6px;
+	}
+	.profile h1.header:before{
+		left: 44%;
+		width: 112px;
+	} 
+	.education h1.header:before{
+		left: 42%;
+		width: 152px;
+	}
+	.internships h1.header:before{
+		left: 43%;
+	}
+	.skills h1.header:before{
+		left: 44%;
+	}
+	
+	.education p.pge:before{
+		right: -14px;
+		top:-20px;
+		height: 370px;
+	}
+	.education .university{
+		margin-top: 30px;
+	}
+	.education .university p.tu:before{
+		top: 0px;
+	}
+	.education .continue{
+		margin-top: 15px;
+	}
+	.internships h1.header:before{
+		left: 42%;
+	}
+	.skills h1.header:before{
+		left: 42%;
+	}
+}
+@media only screen and (max-width: 1183px){
+	#chart {
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 1130px){
+	#chart {
+		font-size: 18px;
+	}
+	.internships img{
+		width: 100%;
+		max-width: 300px;
+	}
+}
+@media only screen and (max-width: 600px){
+	.myself .container{
+		font-size: 30px;
+	}
+	.myself .col-md-6 span.first,
+	.myself .col-md-6 span.second{
+		font-size: 30px;
+	}
+	
+	.myself .col-md-6 span.first:before{
+		display: none;
+	}
+	.myself .col-md-6 span.second:before{
+		display: none;
+	}
+	.myself .code{
+		font-family: 'VT323', monospace;
+		font-size: 16px;
+	}
+	.myself img{
+		width: 200px;
+		height: auto;
+		border-radius: 15px;
+	}
+	.profile{
+		top: 50px;
+	}
+	.profile .container i.fa-solid.fa-user{
+		font-size: 30px;
+	}
+	.profile h1.header:before{
+		left: 45%;
+		width: 50px;
+	} 
+	.profile h3.moto{
+		font-size: 16px;
+	}
+	.profile p{
+		width: 80%;
+		font-size: 20px;
+	}
+	.line{
+		width: 250px;
+		height: 5px;
+		background-color: #fff;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		top: 80px;
+		border-radius: 10px;
+	}
+	
+	.education{
+		top: 150px;
+	}
+	.education h1.header{
+		position: relative;
+	}
+	.education h1.header:before{
+		left: 40%;
+		width: 100px;
+	}
+	.education .school{
+		margin-top: 100px;
+	}
+	.education .school .year p{
+		background-color: #fff;
+		color: #000;
+		width: 100px;
+		height: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 50%;
+		display: flex; 
+		justify-content: center; 
+		align-items: center;
+		font-size: 20px;
+	}
+	.education .school p.name{
+		font-size: 19px;
+		right: -50px;
+	}
+	.education p.pge{
+		font-size: 17px;
+	}
+	.education p.pge:before{
+		height: 400px;
+	}
+	.education .university{
+		margin-top: 5px;
+	}
+	.education .university .year p{
+		background-color: #fff;
+		color: #000;
+		width: 100px;
+		height: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 50%;
+		display: flex; 
+		justify-content: center; 
+		align-items: center;
+		font-size: 20px;
+	}
+	.education .university .name p{
+		font-size: 19px;
+		left: -40px;
+	}
+	.education .university p.tu{
+		font-size: 17px;
+	}
+	.education .university p.tu:before{
+		content: '';
+		position: absolute;
+		left: -14px;
+		top:-10px;
+		width: 3px;
+		height: 300px;
+		background-color: #fff;
+	}
+	
+	.internships{
+		top: 10px;
+		padding: 10px;
+	}
+	.internships h1.header:before{
+		left: 38%;
+		width: 125px;
+	}
+	.internships img{
+		margin-top: 80px;
+		width: 200px;
+	}
+	.internships p{
+		font-size: 20px;
+	}
 
+	.skills{
+		top: -200px;
+		padding-bottom: 80px;	
+	}
+	.skills .container i.fa-solid.fa-laptop-code{
+		font-size: 50px;
+	}
+	.skills h1.header:before{
+		left: 0%;
+		width: 68px;
+	}
+	#chart {
+		height: 300px;
+		width: 500px;
+		font-size: 17px;
+		padding: 10px;
+		left: -220px;
+	}
+	#footer{
+		top: 230px;
+		padding: 20px;
+		
+	}
+	#footer p{
+		font-size: 18px;
+		margin-top: 20px;
+	}
+	#footer span,
+	#footer i.fa.fa-heart{
+		color: #FFC107;
+	}
+}
