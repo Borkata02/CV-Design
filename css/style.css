@@ -31,25 +31,24 @@ body{
 	position: relative;
 	z-index: -1;
 	background-attachment: fixed;
-
+	
 }
 
 #honeycomb{
 	position: relative;
 	top: 300px;
 	width: 100%;
-	height: auto;
-    text-shadow: 8px 8px 10px #0000008c;
-    background-color: #343a40;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #000000, #0e0e0f, #282729, #151314, #000000);
-
+	height: 100%;
+	text-shadow: 8px 8px 10px #0000008c;
+	background-color: #343a40;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #000000, #0e0e0f, #282729, #151314, #000000);
+	
 }
 .nav .container{
 	width: 100%;
 	height: auto;
-    text-shadow: 8px 8px 10px #0000008c;
-    background-color: #343a40;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #000000, #0e0e0f, #282729, #151314, #000000);
+	text-shadow: 8px 8px 10px #0000008c;
+	background: rgb(99, 99, 99);
 	border-radius: 3px;
 	padding: 10px;
 }
@@ -96,9 +95,9 @@ body{
 .myself .container{
 	width: 100%;
 	height: auto;
-    text-shadow: 8px 8px 10px #0000008c;
-    background-color: #343a40;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #000000, #0e0e0f, #282729, #151314, #000000);
+	text-shadow: 8px 8px 10px #0000008c;
+	background-color: #343a40;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #000000, #0e0e0f, #282729, #151314, #000000);
 	font-family: 'Agdasima', sans-serif;
 	font-size: 55px;
 	position: relative;
@@ -153,7 +152,7 @@ body{
 	width: 430px;
 	height: 8px;
 	background-color: #00FFFF;
-
+	
 }
 .myself .code{
 	overflow: hidden; 
@@ -162,43 +161,43 @@ body{
 	margin: 0 auto; 
 	letter-spacing: .05em;
 	animation: 
-	  typing 3.5s steps(35, end),
-	  blink-caret .70s step-end infinite;
+	typing 3.5s steps(35, end),
+	blink-caret .70s step-end infinite;
 }
 
 @keyframes typing {
 	from { width: 0% }
 	to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
 	from, to { border-color: transparent }
 	50% { border-color: #FFC107; }
-  }
-  .profile{
-
+}
+.profile{
+	
 	position: relative;
 	top: 100px;
-
-  }
-  .profile .container{
+	
+}
+.profile .container{
 	position: relative;
 	text-align: center;
 	/* top: -300px; */
 	color: #fff;
 	font-family: 'Agdasima', sans-serif;
 	text-transform: uppercase;
-
-  }
-  .profile .container i.fa-solid.fa-user,
-  .education .container i.fa-sharp.fa-solid.fa-school{
+	
+}
+.profile .container i.fa-solid.fa-user,
+.education .container i.fa-sharp.fa-solid.fa-school{
 	font-size: 40px;
-  }
-  .profile h1.header{
+}
+.profile h1.header{
 	position: relative;
-  }
-  .profile h1.header:before{
+}
+.profile h1.header:before{
 	content: '';
 	position: absolute;
 	bottom: -3px;
@@ -208,15 +207,15 @@ body{
 	background-color: #fff;
 	border-radius: 5px;;
 	
-  } 
-  .profile h3.moto{
+} 
+.profile h3.moto{
 	font-family: 'Oswald', sans-serif;
 	font-style: italic;
-  }
-  .profile p{
+}
+.profile p{
 	position: relative;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	width: 70%;
 	font-size: 27px;
 	text-align: justify;
@@ -226,18 +225,18 @@ body{
 	padding-left: 40px;
 	padding-right: 40px;
 	border-radius: 15px;
-  }
-  .line{
+}
+.line{
 	width: 500px;
 	height: 5px;
 	background-color: #fff;
 	position: relative;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	top: 120px;
 	border-radius: 10px;
-  }
-  .education{
+}
+.education{
 	top: 280px;
 	position: relative;
 	text-align: center;
@@ -245,11 +244,11 @@ body{
 	color: #fff;
 	font-family: 'Agdasima', sans-serif;
 	text-transform: uppercase; 
-  }
-  .education h1.header{
+}
+.education h1.header{
 	position: relative;
-  }
-  .education h1.header:before{
+}
+.education h1.header:before{
 	content: '';
 	position: absolute;
 	bottom: -3px;
@@ -258,11 +257,11 @@ body{
 	height: 5px;
 	background-color: #fff;
 	border-radius: 5px;;
-  }
-  .education .school{
+}
+.education .school{
 	margin-top: 100px;
-  }
-  .education .school .year p{
+}
+.education .school .year p{
 	background-color: #fff;
 	color: #000;
 	width: 100px;
@@ -274,24 +273,24 @@ body{
 	justify-content: center; 
 	align-items: center;
 	font-size: 20px;
-  }
-  .education .school p.name{
+}
+.education .school p.name{
 	font-size: 28px;
 	text-align: center;
 	position: relative;
 	right: -100px;
 	font-style: italic;
-
-  }
-  .education p.pge{
+	
+}
+.education p.pge{
 	text-align: justify;
 	font-size: 23px;
 	background-color: rgba(172, 173, 172, 0.8);
 	padding: 10px;
 	border-radius: 5px;
 	position: relative;
-  }
-  .education p.pge:before{
+}
+.education p.pge:before{
 	content: '';
 	position: absolute;
 	right: -14px;
@@ -299,7 +298,7 @@ body{
 	width: 3px;
 	height: 330px;
 	background-color: #fff;
-  }
+}
 .education .university{
 	margin-top: 50px;
 }
@@ -365,7 +364,7 @@ body{
 	color: #fff;
 	font-family: 'Agdasima', sans-serif;
 	text-transform: uppercase;
-
+	
 }
 .internships .container i.fa-solid.fa-award{
 	font-size: 45px;
@@ -373,8 +372,8 @@ body{
 
 .internships h1.header{
 	position: relative;
-  }
-  .internships h1.header:before{
+}
+.internships h1.header:before{
 	content: '';
 	position: absolute;
 	bottom: -3px;
@@ -383,24 +382,105 @@ body{
 	height: 5px;
 	background-color: #fff;
 	border-radius: 5px;;
-  }
-  .internships img{
+}
+.internships img{
 	margin-top: 150px;
 	width: 300px;
 	height: auto;
-  }
-  .internships p{
+}
+.internships p{
 	font-size: 24px;
-  }
-  @media only screen and (max-width: 1399px){
+}
+.skills{
+	top: 100px;
+	position: relative;
+	text-align: center;
+	padding: 180px;
+	color: #fff;
+	font-family: 'Agdasima', sans-serif;
+	text-transform: uppercase;
+	
+}
+.skills .container i.fa-solid.fa-laptop-code{
+	font-size: 45px;
+}
+.skills h1.header{
+	position: relative;
+}
+.skills h1.header:before{
+	content: '';
+	position: absolute;
+	bottom: -3px;
+	left: 46%;
+	width: 100px;
+	height: 5px;
+	background-color: #fff;
+	border-radius: 5px;;
+}
+#chart{
+	height: 250px;
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	position: relative;
+	top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 28px;
+}
+#chart caption{
+	color: #fff;
+	position: relative;
+	top: -50px;
+}
+
+.charts-css.bar:not(.reverse) tbody tr th {
+	font-size: 21px;
+}
+.charts-css.bar.reverse tbody tr th{
+	font-size: 21px;
+}
+#chart2 caption{
+	color: #fff;
+	text-align: right;
+	position: relative;
+	top: -50px;
+}
+#chart2{
+	height: 250px;
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: right;
+	align-items: right;
+	margin: 0;
+	position: relative;
+	top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	font-size: 30px;
+}
+
+  
+
+
+
+
+
+@media only screen and (max-width: 1399px){
 	.myself .container{
 		font-size: 40px;
 	}
-
+	
 	.myself .col-md-6 span.first,
-.myself .col-md-6 span.second{
-	font-size: 45px;
-	
-	
+	.myself .col-md-6 span.second{
+		font-size: 45px;
+		
+		
+	}
 }
-  }
+
